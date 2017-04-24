@@ -1,0 +1,27 @@
+Rules
+======
+
+   * There will be 20 boxes:
+	* The first 10 boxes will have from 1p to £1000.
+	* The second 10 boxes will have £1000 to £250,000
+	* The player will choose one box from the 20 and this will be their box you keep.
+   
+   * There will be an offer every 3 boxes.
+	* The offer will be calculated with:
+
+	average = amount_left/num_boxes_left;
+	chance = int.random.range(0, 100); 
+	if (chance =< 85)
+	{
+	   offer = average - (average * 0.10);
+	} else {
+	   offer = average + (average * 0.10);
+	}
+	
+	* The user will then once accepted an offer they would be shown the amount they won and what was in there box. 
+	* If the user continues to the end of the game without accepting an offer they will win whatever is in there box.
+
+   * In the main form the user will see buttons in the shape of boxes which they will choose at random and have a number behind them. Once the User chooses a box the number is displayed on a label and a
+     small table will be at the side and the number will be removed the list of numbers. 
+
+ 
